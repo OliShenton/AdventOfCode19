@@ -117,7 +117,7 @@ fn main() {
     loop {
         while j <= i {
             let ans = q2::q2(intcode.clone(), i, j);
-            if ans == Ok(19690720) { println!("Solution is i={}, j={}, giving {}", i, j, 100*i + j ) }
+            if ans == Ok(19690720) { println!("Solution is i={}, j={}, giving {}", i, j, 100*i + j ); break; }
             j += 1;
         }
         i += 1;
